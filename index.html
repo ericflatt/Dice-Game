@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <title>Eric Flatt Dice Game</title>
+        <link rel="stylesheet" type="text/css" href="diceGame.css">
+        <!-- <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+        <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script> -->
+</head>
+<body>
+    <div class="">
+        <h1 id="gameTitle" class="">The Dice Game</h1>
+        <button class="newGameBtn" onclick="newGame()">+ New Players</button>
+    </div>
+    <div class="">
+        <img src="img/dice1.png"  alt="Second Dice" id="firstDice" height="100" width="100">
+        <div id="die1" class="dice">0</div>
+    </div>
+    <div class="">
+        <img src="img/dice1.png"  alt="Second Dice" id="secondDice" height="100" width="100">
+        <div id="die2" class="dice">0</div>
+    </div>
+    <div class="">
+        <h2 id="player1Name" class="highlight"></h2>
+        <h2 id="player1Score">0</h2>
+        <h2 id="player2Name"></h2>
+        <h2 id="player2Score">0</h2>
+    </div>
+    <div class="">
+            <button class="btn " onclick="rollDice()">Roll Dice</button>
+            <h2 id="status" style="clear:left;"></h2>
+        <div class="rules">
+            <h3>Rules:</h3>
+                <p>1. Each player gets one turn to roll their dice.</p>
+                <p>2. If a player rolls both 1's, the game is over and the other player wins.</p>
+                <p>3. If a player rolls doubles, they recieve double the points.</p>
+                <p>4. The first player to reach a score of 50 or greater wins!</p>
+        </div>
+    </div>
+    <script src="diceGame.js"></script>
+</body>
+</html>
