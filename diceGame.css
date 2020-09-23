@@ -1,4 +1,4 @@
-.gameTitle {
+.gameTitle { 
     padding-bottom: 90px;
     margin-bottom: 100px;
     background-color: rgba(0,0,0,.15);
@@ -6,15 +6,16 @@
 }
  
 #gameTitle {
-    position: absolute;
     font-size: 70px;
     text-align: center;
     color: black;
+    font-family: sans-serif;
 }
 
 body {
     background-color: white;
     color: black;
+    padding:5%;
 }
 
 footer {
@@ -29,13 +30,19 @@ footer {
     font-size: 26px;
 }
 
-div.dice {
+.diceContainer{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+div.score {
 	float: left;
 	width: 35px;
     color: black;
 	padding: 10px;
 	font-size: 24px;
-	text-align: right;
+    text-align: right;
 }
 
 .dieImage {
@@ -46,21 +53,32 @@ div.dice {
     background-color: rgba(0,0,0,0.3);
 }
 
+/* .rollButton{
+    display: flex;
+    justify-content: center;
+} */
+
 .btn {
     text-align: center;
-    text-shadow: 5px 5px 9px #000000;
     color: white;
-    font-size: 30pt !important;
-    font-family: "lobster";
-    background-color: green !important;
-    width: 220px;
-    height: 70px;
+    font-size: 40px !important;
+    background-color: black !important;
+    padding: 5px 25px;
 }
 
-.btn:hover {
-    color: white !important;
-    background-color: rgb(10,80,50) !important;
+.noSelect{
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none;
 }
+
+/* .btn:hover {
+    color: white !important;
+    background-color: rgb(185, 53, 130) !important;
+} */
 
 .newGameBtn {
     position: fixed;
@@ -92,10 +110,5 @@ div.dice {
 .rules {
     text-align: left;
     color: black;
-}
-
-
-.rules {
     margin-bottom: 150px;
 }
-

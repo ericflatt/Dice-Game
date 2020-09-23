@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html> 
 <head>
     <meta charset="UTF-8"/>
     <title>Eric Flatt Dice Game</title>
@@ -9,25 +9,28 @@
 </head>
 <body>
     <div class="">
-        <h1 id="gameTitle" class="">The Dice Game</h1>
+        <h1 id="gameTitle" class="">Dice Game</h1>
         <button class="newGameBtn" onclick="newGame()">+ New Players</button>
     </div>
-    <div class="">
+    <div class="diceContainer">
+    <div class="topDice">
         <img src="img/dice1.png"  alt="Second Dice" id="firstDice" height="100" width="100">
-        <div id="die1" class="dice">0</div>
+        <div id="die1" class="score">0</div>
     </div>
-    <div class="">
+    <div class="bottomDice">
         <img src="img/dice1.png"  alt="Second Dice" id="secondDice" height="100" width="100">
-        <div id="die2" class="dice">0</div>
+        <div id="die2" class="score">0</div>
     </div>
+</div>
     <div class="">
         <h2 id="player1Name" class="highlight"></h2>
         <h2 id="player1Score">0</h2>
         <h2 id="player2Name"></h2>
         <h2 id="player2Score">0</h2>
     </div>
-    <div class="">
-            <button class="btn " onclick="rollDice()">Roll Dice</button>
+    <div class="rollButton">
+            <a class="btn noSelect" onclick="rollDice()">Roll!</a>
+    </div>
             <h2 id="status" style="clear:left;"></h2>
         <div class="rules">
             <h3>Rules:</h3>

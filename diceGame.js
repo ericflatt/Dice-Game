@@ -1,5 +1,5 @@
 //global variables
-
+ 
 //Here are my DOM variables
     var player1Name = document.getElementById("player1Name");
     var player2Name = document.getElementById("player2Name");
@@ -10,10 +10,10 @@
     var p1Score = document.getElementById("player1Score");
     var p2Score = document.getElementById("player2Score");
 
-    var player1 = prompt("what is your name, player 1?");
-    var player2 = prompt("What is your name, player 2?");
-    player1Name.innerHTML = player1+"'s score:";
-    player2Name.innerHTML = player2+"'s score:";
+    // var player1 = prompt("what is your name, player 1?");
+    // var player2 = prompt("What is your name, player 2?");
+    // player1Name.innerHTML = player1+"'s score:";
+    // player2Name.innerHTML = player2+"'s score:";
 
 //Here are the main booleans and intergers needed to create the rules for my game
     var turn = false;
@@ -75,7 +75,7 @@ function rollDice() {
                     diceTotal = diceTotal*2;
                     score1 = score1 + diceTotal;
                     p1Score.innerHTML = score1;
-                    status.innerHTML += " Lucky! Your total has been doubled to "+(diceTotal)+".";
+                    status.innerHTML += " Doubled to "+(diceTotal)+".";
                     turn = true;
                     player2Name.className = "highlight";
                     player1Name.className = null;
@@ -114,7 +114,7 @@ function rollDice() {
                     diceTotal = diceTotal*2;
                     score2 = score2 + diceTotal;
                     p2Score.innerHTML = score2;
-                    status.innerHTML += " Lucky! your total has been doubled to "+(diceTotal)+".";
+                    status.innerHTML += " Doubled to "+(diceTotal)+".";
                     turn = false;
                     player1Name.className = "highlight";
                     player2Name.className = null;
