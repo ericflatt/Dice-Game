@@ -10,10 +10,10 @@
     var p1Score = document.getElementById("player1Score");
     var p2Score = document.getElementById("player2Score");
 
-    // var player1 = prompt("what is your name, player 1?");
-    // var player2 = prompt("What is your name, player 2?");
-    // player1Name.innerHTML = player1+"'s score:";
-    // player2Name.innerHTML = player2+"'s score:";
+    var player1 = prompt("what is your name, player 1?");
+    var player2 = prompt("What is your name, player 2?");
+    player1Name.innerHTML = player1+"'s score:";
+    player2Name.innerHTML = player2+"'s score:";
 
 //Here are the main booleans and intergers needed to create the rules for my game
     var turn = false;
@@ -151,7 +151,7 @@ function rollDice() {
             }
         }
         if (score2 >= win) {
-            alert("Game Over! "+player2+" wins! "+player1+"'s score was: "+score2);
+            alert("Game Over! "+player2+" wins! "+player2+"'s score was: "+score2);
             var startNewGame = confirm("Would you like to play with new players?");
             score1 = 0;
             score2 = 0;
