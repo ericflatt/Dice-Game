@@ -37,6 +37,7 @@ footer {
 .diceContainer{
     margin: auto;
     display: flex;
+    align-items: center;
     justify-content: center;
 }
 
@@ -50,7 +51,7 @@ div.score {
 }
 
 .dieImage {
-    margin-right: 30pt;
+    margin-right: 0;
 }
 
 .menu {
@@ -68,6 +69,7 @@ div.score {
     font-size: 40px !important;
     background-color: black !important;
     padding: 5px 25px;
+    cursor: pointer;
 }
 
 .noSelect{
